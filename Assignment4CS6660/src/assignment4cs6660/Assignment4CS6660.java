@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package assignment4cs6660;
 
 import java.io.*;
@@ -38,9 +39,9 @@ public class Assignment4CS6660 {
             
             index = str.indexOf("->");
             
-            str1 = str.substring(0, index);
+            str1 =  str.substring(0, index);
             
-            str2 = str.substring(index+2);
+            str2 =  str.substring(index+2);
             
             System.out.println("For " + str1 + " " + str2);
             
@@ -54,7 +55,7 @@ public class Assignment4CS6660 {
             
             System.out.println("-------X-------");
             
-        }
+    }
         
         
         
@@ -120,7 +121,7 @@ public class Assignment4CS6660 {
             i = i - 1;
             j = j - 1;            
         }else if(temp[i][j] == temp[i-1][j-1] + 1){
-            System.out.println("Replace " + str1[j-1] + " in string1 to " + str2[i-1] + " at " + i);
+            System.out.println("Replace " + str1[i-1] + " in string1 to " + str2[j-1] + " at " + i);
             i = i - 1;
             j = j - 1;
         }else if(temp[i][j] == temp[i-1][j] + 1){
@@ -134,7 +135,5 @@ public class Assignment4CS6660 {
         }
         
     }
-
-    
     
 }
